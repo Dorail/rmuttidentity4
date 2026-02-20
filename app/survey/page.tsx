@@ -134,11 +134,10 @@ export default function SurveyPage() {
                 body: JSON.stringify(formData),
             });
 
-            const data = await res.json();
-
             if (res.ok) {
                 setStatus('success');
             } else {
+                const data = await res.json();
                 setStatus('error');
                 setErrorMessage(data.message || 'เกิดข้อผิดพลาดในการส่งข้อมูล');
             }
