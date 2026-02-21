@@ -311,7 +311,7 @@ export default function SurveyPage() {
 
                     {/* Satisfaction Section Cards */}
                     {[
-                        { id: 'satisfactionLevel', label: 'ความพึงพอใจในการเข้าร่วมกิจกรรม' },
+                        { id: 'satisfactionLevel', label: 'ความพึงพอใจในการเข้าร่วมโครงการในภาพรวม' },
                         { id: 'durationLevel', label: 'ระยะเวลาในการจัดกิจกรรม' },
                         { id: 'locationLevel', label: 'สถานที่จัดกิจกรรม' },
                         { id: 'leaderLevel', label: 'ผู้นำกิจกรรม / วิทยากร' }

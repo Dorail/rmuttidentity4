@@ -34,12 +34,12 @@ export default function Footer() {
 
                     {/* Social / Contact */}
                     <div className="space-y-4 flex flex-col items-start md:items-start">
-                        <h3 className="font-bold text-zinc-900 dark:text-white">ติดต่อเรา</h3>
+                        <h3 className="font-bold text-zinc-900 dark:text-white">เข้ากลุ่มปรึกษา</h3>
                         <div className="flex gap-4">
                             <motion.a
                                 whileHover={{ y: -5, scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                href="https://line.me/" // Placeholder or actual link if known
+                                href="https://line.me/ti/g2/7KAjPKWoqqCCScqNdnjUMOTS48m9xRW4qkBOuQ?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="h-12 px-6 rounded-full bg-[#00C300] text-white flex items-center gap-3 hover:bg-[#00b300] transition-colors shadow-lg shadow-green-500/30 hover:shadow-green-500/50"

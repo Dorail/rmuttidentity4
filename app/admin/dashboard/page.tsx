@@ -317,7 +317,7 @@ export default function AdminDashboard() {
                         <h2 className="text-xl font-bold text-neutral-200">ผลการประเมินรายข้อ (Detailed Breakdown)</h2>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <ChartSection title="1. ความพึงพอใจภาพรวม" data={data.distributions.satisfaction} type="rating" />
+                            <ChartSection title="1. ความพึงพอใจในการเข้าร่วมโครงการในภาพรวม" data={data.distributions.satisfaction} type="rating" />
                             <ChartSection title="2. ระยะเวลาในการจัดกิจกรรม" data={data.distributions.duration} type="rating" />
                             <ChartSection title="3. สถานที่จัดกิจกรรม" data={data.distributions.location} type="rating" />
                             <ChartSection title="4. ผู้นำกิจกรรม / วิทยากร" data={data.distributions.leader} type="rating" />
@@ -725,7 +725,7 @@ function AnalyticsView({ data, formatFaculty }: any) {
             <div className="border-t border-neutral-800 my-4"></div>
             <h2 className="text-xl font-bold text-neutral-200">ส่วนที่ 2: ความพึงพอใจต่อการจัดกิจกรรม</h2>
 
-            <AnalyticsCard title="1. ความพึงพอใจภาพรวม" data={data.distributions.satisfaction} type="rating" />
+            <AnalyticsCard title="1. ความพึงพอใจในการเข้าร่วมโครงการในภาพรวม" data={data.distributions.satisfaction} type="rating" />
             <AnalyticsCard title="2. ระยะเวลาในการจัดกิจกรรม" data={data.distributions.duration} type="rating" />
             <AnalyticsCard title="3. สถานที่จัดกิจกรรม" data={data.distributions.location} type="rating" />
             <AnalyticsCard title="4. ผู้นำกิจกรรม / วิทยากร" data={data.distributions.leader} type="rating" />

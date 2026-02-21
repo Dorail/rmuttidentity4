@@ -1,4 +1,4 @@
-import { QrCode, MessageCircle } from 'lucide-react';
+import { MessageCircle } from 'lucide-react';
 
 type ResultCardProps = {
     score: number;
@@ -37,14 +37,12 @@ export default function ResultCard({ score, onReset }: ResultCardProps) {
             </div>
 
             <div className="flex flex-col items-center justify-center gap-6">
-                <div className="p-3 bg-white dark:bg-black rounded-2xl border border-zinc-100 dark:border-zinc-800 shadow-sm">
-                    {/* Placeholder for QR Code */}
-                    <div className="w-32 h-32 md:w-40 md:h-40 bg-zinc-100 dark:bg-zinc-800 rounded-xl flex items-center justify-center text-zinc-400">
-                        <div className="text-center space-y-2">
-                            <QrCode className="w-10 h-10 md:w-12 md:h-12 mx-auto" />
-                            <span className="text-[10px] md:text-xs block">QR Code</span>
-                        </div>
-                    </div>
+                <div className="p-1 bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-100 dark:border-zinc-800 shadow-sm overflow-hidden">
+                    <img
+                        src="/openchatLine/QRCODE.jpg"
+                        alt="Line OpenChat QR Code"
+                        className="w-48 h-48 md:w-60 md:h-60 object-cover rounded-xl"
+                    />
                 </div>
 
                 <div className="flex flex-col gap-3 w-full">
@@ -52,13 +50,13 @@ export default function ResultCard({ score, onReset }: ResultCardProps) {
                         สแกน หรือ กดปุ่มด้านล่าง
                     </p>
                     <a
-                        href="https://line.me" // Replace with actual Line URL
+                        href="https://line.me/ti/g2/7KAjPKWoqqCCScqNdnjUMOTS48m9xRW4qkBOuQ?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#06C755] hover:bg-[#05b64d] text-white font-bold transition-all shadow-lg shadow-green-500/20 active:scale-95"
                     >
                         <MessageCircle className="w-5 h-5" />
-                        <span>แอดไลน์ (OpenChat)</span>
+                        <span>เข้ากลุ่ม (OpenChat)</span>
                     </a>
                 </div>
             </div>
