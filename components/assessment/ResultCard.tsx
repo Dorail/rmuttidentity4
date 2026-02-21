@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { MessageCircle } from 'lucide-react';
 
 type ResultCardProps = {
@@ -37,10 +38,13 @@ export default function ResultCard({ score, onReset }: ResultCardProps) {
             </div>
 
             <div className="flex flex-col items-center justify-center gap-6">
-                <div className="p-1 bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-100 dark:border-zinc-800 shadow-sm overflow-hidden">
-                    <img
+                <div className="p-1 bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-100 dark:border-zinc-800 shadow-sm overflow-hidden flex items-center justify-center">
+                    <Image
                         src="/openchatLine/QRCODE.jpg"
                         alt="Line OpenChat QR Code"
+                        width={320}
+                        height={320}
+                        priority
                         className="w-48 h-48 md:w-60 md:h-60 object-cover rounded-xl"
                     />
                 </div>
